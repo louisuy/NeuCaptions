@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <nav class="navbar">
+        NeuCaptions
+    </nav>
+    <div id="bg-image"></div>
+    <div class="main">
+        <form method="post" action="{{url_for('after')}}" enctype="multipart/form-data">
+            <div class="app-main">
+                <div class="square">No file chosen</div>
+                <input type="file" name="file1" id="fileInput" required>
+                <div class="buttons">
+                    <button type="button" id="upload-button" class="button">Choose file</button>
+                    <input type="submit" value="Upload" class="button">
+                </div>
+            </div>            
+        </form>
+    </body>
+    </div>
+</html>

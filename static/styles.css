@@ -1,0 +1,120 @@
+/* Reset styling */
+@import "normalize.css";
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+/* Define global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111; /* Dark background color */
+  color: white; /* White text color */
+}
+
+#bg-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.pred {
+    background-image: url('./file.jpg');
+}
+
+.app-main {
+    width: 100%;
+}
+
+.main {
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blurred {
+    opacity: 0.8;
+    filter: blur(5px);
+  }  
+
+/* Define styles for index.html */
+.square {
+  width: 50vh; /* Adjust as desired */
+  height: 50vh; /* Adjust as desired */
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #505050; /* Light gray color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square img {
+    /* Scale image to fit within square */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Rounded corners to match square */
+}
+
+input[type="file"]{
+    display: none;
+}
+  
+/* #fileInput{
+    display: none;
+} */
+  
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+  /* Material design button styles */
+  width: 24vh; /* Same width as square placeholder */
+  height: 36px; /* Adjust as desired */
+  border: none;
+  margin-top: 2em;
+  margin: 0.5em; /* Add space between button and placeholder */
+  border-radius: 18px; /* Rounded button */
+  background-color: #1e88e5; /* Blue color */
+  color: white; /* White text color */
+  font-weight: 600; /* Medium font weight */
+  text-align: center; /* Center text horizontally */
+  line-height: 36px; /* Center text vertically */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Add space between letters */
+  transition: background-color 0.3s; /* Add a transition for hover effect */
+}
+
+
+.button:hover {
+  background-color: #1565c0; /* Darker blue color on hover */
+}
+
+
+.result-text {
+    /* Styles for text display */
+    max-width: 47vh; /* Adjust as desired */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 0.4em;
+    padding: 10px; /* Add padding */
+    background-color: #505050; /* Light gray color */
+    text-align: center; /* Center text horizontally */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.navbar{
+    background-color: black;
+    padding: 1em;
+}
