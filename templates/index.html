@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NeuCaptions</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
 <body>
     <nav class="navbar">
-        NeuCaptions
+        <ul>
+            <li>
+                <a href="{{url_for('index')}}">
+                    <img src="{{ url_for('static', filename='logo.png') }}">
+                </a>
+            </li>
+          </ul>
     </nav>
     <div id="bg-image"></div>
     <div class="main">
